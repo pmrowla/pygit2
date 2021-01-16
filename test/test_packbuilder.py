@@ -30,7 +30,7 @@ import os
 import pytest
 
 import pygit2
-from pygit2 import PackBuilder
+from pygit2.packbuilder import PackBuilder
 from . import utils
 from .utils import rmtree
 
