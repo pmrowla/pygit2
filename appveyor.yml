@@ -45,7 +45,7 @@ build_script:
 # Build and install pygit2
 - cmd: |
     "%PYTHON%" setup.py bdist_wheel
-    "%PYTHON%" -m pip install .
+    "%PYTHON%" setup.py build_ext --inplace -g
 
 test_script:
 - ps: |
