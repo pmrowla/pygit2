@@ -47,7 +47,7 @@ build_script:
 - cmd: |
     "%PYTHON%" setup.py bdist_wheel
     cd dist
-    "%PYTHON%" -m pip install --find-links=. pygit2
+    "%PYTHON%" -m pip install pygit2-*.whl
     cd ..
     mv pygit2 pygit2.bak
 
